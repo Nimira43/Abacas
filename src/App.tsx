@@ -11,6 +11,9 @@ export const App = () => (
     layout={Layout}
     dataProvider={dataProvider}
   >
-    <Resource name='posts' list={PostList} />
+    <Resource
+      name='posts'
+      list={PostList}
+    />
   </Admin>
 )

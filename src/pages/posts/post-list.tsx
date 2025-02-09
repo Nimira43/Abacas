@@ -2,10 +2,21 @@ import { Datagrid, List, ReferenceField, TextField, FunctionField } from 'react-
 
 const PostList = () => (
     <List>
-    <Datagrid>
+    <Datagrid
+      sx={{
+        '.RaDatagrid-headerCell': {
+          padding: '16px',
+        }
+      }}
+    >
       <TextField
-          source='id' label='ID' />
-      <TextField source='title' label='Post Title' />
+        source='id'
+        label='ID'
+      />
+      <TextField
+        source='title'
+        label='Post Title'
+      />
       <FunctionField
         label='Post Content'
         render={(record) => `
