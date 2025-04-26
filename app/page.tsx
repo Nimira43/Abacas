@@ -1,10 +1,8 @@
-import React from 'react'
-
 const HomePage = () => {
   return (
-    <div>
+    <main>
       <h1>Abacus</h1>
-    </div>
+    </main>
   )
 }
 
