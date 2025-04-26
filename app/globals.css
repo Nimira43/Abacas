@@ -154,3 +154,20 @@ input[type='number'] {
   margin-bottom: 40px;
 }
 
+.list li {
+  background-color: var(--grey-dark);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+}
+
+.list li.plus {
+  border-right: var(--forest);
+}
+
+.list li.minus {
+  border-right: var(--blaze);
+}
