@@ -94,3 +94,12 @@ h3 {
   justify-content: space-between;
   margin-bottom: 20px 0;
 }
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid var(--main);
+}
