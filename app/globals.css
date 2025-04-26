@@ -12,6 +12,7 @@
   --grey-medium: #999;
   --grey-light: #ccc;
   --grey-light-extra: #eee;
+  --blaze: #ff0000;
 }
 
 body {
@@ -60,3 +61,29 @@ body {
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+.navbar .cl-button {
+  background: transparent;
+  border: 0;
+}
+
+h1, h4 {
+  letter-spacing: 1px;
+  margin: 0;
+  color: var(--main);
+  text-transform: uppercase;
+}
+
+h3 {
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+.guest {
+  text-align: center;
+}
+
+.error {
+  color: var(--blaze);
+}
+
