@@ -12,7 +12,8 @@
   --grey-medium: #999;
   --grey-light: #ccc;
   --grey-light-extra: #eee;
-  --blaze: #ff0000;
+  --blaze: #f61313;
+  --forest: #0e960e;
 }
 
 body {
@@ -102,4 +103,19 @@ h3 {
 
 .inc-exp-container > div:first-of-type {
   border-right: 1px solid var(--main);
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  color: var(--main);
+}
+
+.money.plus {
+  color: var(--forest);
+}
+
+.money.minus {
+  color: var(--blaze);
 }
