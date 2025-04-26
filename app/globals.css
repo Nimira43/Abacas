@@ -87,3 +87,10 @@ h3 {
   color: var(--blaze);
 }
 
+.inc-exp-container {
+  background-color: var(--grey-dark);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px 0;
+}
