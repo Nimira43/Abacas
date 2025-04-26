@@ -37,3 +37,13 @@ body {
 .navbar a {
   color: var(--light);
 }
+
+.navbar button,
+.guest button {
+  border: 0;
+  border-radius: 3px;
+  background-color: var(--support);
+  color: var(--light);
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
