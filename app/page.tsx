@@ -1,7 +1,11 @@
+import Header from '@/components/Header'
+
 const HomePage = () => {
   return (
     <main>
-      <h1>Abacus</h1>
+      <Header />
+      <hr />
+      <h1 className='logo'>Abacus</h1>
     </main>
   )
 }
