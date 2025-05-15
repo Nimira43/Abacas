@@ -57,7 +57,7 @@ body {
 }
 
 .navbar button:hover {
-  background-color: var(--main);
+  background-color: var(--light);
 }
 
 .navbar-container {
