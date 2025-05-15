@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 const HomePage = () => {
   return (
     <main>
-      <Header />
+      HomePage
     </main>
   )
 }
