@@ -1,6 +1,20 @@
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
+
 const Header = () => {
   return ( 
-    <div>Header</div>
+    <nav className='navbar'>
+      <div className="navbar-container">
+        <h2 className='logo'>Abacus</h2>
+        <div>
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+        </div>
+      </div>
+    </nav>
    )
 }
  
