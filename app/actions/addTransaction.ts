@@ -19,4 +19,7 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
       error: 'Text or amount is missing.'
     }
   }
+
+  const text: string = textValue.toString()
+  const amount: number = parseFloat(amountValue.toString())
 }
