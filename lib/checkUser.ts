@@ -18,5 +18,14 @@ export const checkUser = async () => {
     return loggedInUser
   }
 
+  const newUser = await db.user.create({
+    data: {
+      clerkUserId: user.id,
+      name: `${user.firstName} ${user.lastName}`,
+      imageUrl: user.imageUrl,
+      email: user.emailAddresses[0].emailAddress
+    }
+  })
+
 }
  
