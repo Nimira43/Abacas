@@ -171,12 +171,18 @@ h3 {
 
 input[type='text'],
 input[type='number'] {
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--grey-medium);
   border-radius: 3px;
   display: block;
   font-size: 16px;
   padding: 10px;
   width: 100%;
+  transition: all 0.5s ease;
+}
+
+input[type='text']:focus,
+input[type='number']:focus {
+  border: 1px solid var(--dark);
 }
 
 .btn {
