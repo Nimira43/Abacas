@@ -1,4 +1,4 @@
-import Guest from "@/components/Guest"
+import Guest from '@/components/Guest'
 
 const HomePage = () => {
   return (

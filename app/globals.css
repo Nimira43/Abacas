@@ -69,13 +69,12 @@ body {
 }
 
 .guest button {
-  border: 1px solid var(--dark);
+  border: none;
   background-color: var(--dark);
 }
 
 .guest button:hover {
   background-color: var(--primary);
-  border-color: var(--primary)
 }
 
 .cl-button {

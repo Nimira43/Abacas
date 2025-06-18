@@ -5,6 +5,7 @@ const Guest = () => {
     <div className='guest'>
       <h1>Welcome to Abacus</h1>
       <p>Please login to manage you expenses.</p>
+      <SignInButton />
     </div>
    )
 }
