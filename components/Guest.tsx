@@ -1,3 +1,5 @@
+import { SignInButton } from '@clerk/nextjs'
+
 const Guest = () => {
   return ( 
     <div className='guest'>

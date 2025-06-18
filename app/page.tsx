@@ -1,7 +1,9 @@
+import Guest from "@/components/Guest"
+
 const HomePage = () => {
   return (
     <main>
-      HomePage
+      <Guest />
     </main>
   )
 }
