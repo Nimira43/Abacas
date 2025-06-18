@@ -11,5 +11,12 @@ interface TransactionResult {
 }
 
 async function addTransaction(formData: FormData): Promise<TransactionResult> {
-  
+  const textValue = formData.get('text')
+  const amountValue = formData.get('amount')
+
+  if (!textValue || textValue === '' || !amountValue) {
+    return {
+      error: 'Text or amount is missing.'
+    }
+  }
 }
