@@ -5,8 +5,8 @@
 }
 
 :root {
-  --main: #ff4500;
-  --support: #008080;
+  --primary: #008080;
+  --secondary: #ff4500;
   --dark: #111;
   --light: #fffcfa;
   --grey-dark: #333;
@@ -23,7 +23,7 @@
 
 body {
   background-color: var(--light);
-  color: var(--dark);
+  color: var(--grey-dark);
   min-height: 100vh;
   margin: 0;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .navbar {
-  background: var(--support);
+  background: var(--primary);
   color: var(--light);
 }
 
@@ -48,16 +48,20 @@ body {
 
 .navbar button,
 .guest button {
-  border: 0;
+  border: 1px solid var(--light);
   border-radius: 3px;
-  background-color: var(--support);
+  background-color: transparent;
   color: var(--light);
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.5s ease;  
 }
 
 .navbar button:hover {
   background-color: var(--light);
+  color: var(--primary);
 }
 
 .navbar-container {
@@ -77,8 +81,8 @@ body {
 h1, h4 {
   letter-spacing: 1px;
   margin: 0;
-  color: var(--main);
-  /* text-transform: uppercase; */
+  color: var(--dark);
+  text-transform: uppercase;
 }
 
 h3 {
@@ -95,7 +99,7 @@ h3 {
 }
 
 .inc-exp-container {
-  background-color: var(--grey-dark);
+  background-color: var(--grey-light);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -108,14 +112,14 @@ h3 {
 }
 
 .inc-exp-container > div:first-of-type {
-  border-right: 1px solid var(--main);
+  border-right: 1px solid var(--secondary);
 }
 
 .money {
   font-size: 20px;
   letter-spacing: 1px;
   margin: 5px 0;
-  color: var(--main);
+  color: var(--primary);
 }
 
 .money.plus {
@@ -133,7 +137,7 @@ h3 {
 
 input[type='text'],
 input[type='number'] {
-  border: 1px solid var(--main);
+  border: 1px solid var(--secondary);
   border-radius: 3px;
   display: block;
   font-size: 16px;
@@ -143,7 +147,7 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: var(--main);
+  background-color: var(--primary);
   color: var(--light);
   border: 0;
   display: block;
@@ -161,8 +165,8 @@ input[type='number'] {
 }
 
 .list li {
-  background-color: var(--grey-dark);
-  color: var(--light);
+  background-color: var(--grey-medium);
+  color: var(--dark);
   display: flex;
   justify-content: center;
   position: relative;
@@ -180,7 +184,7 @@ input[type='number'] {
 
 .delete-btn {
   cursor: pointer;
-  background-color: var(--light);
+  background-color: var(--dark);
   color: var(--light);
   border: 0;
   font-size: 20px;
