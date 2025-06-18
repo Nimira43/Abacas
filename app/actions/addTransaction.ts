@@ -22,4 +22,10 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
 
   const text: string = textValue.toString()
   const amount: number = parseFloat(amountValue.toString())
+
+  const transactionData: TransactionData = {
+    text,
+    amount
+  }
+  
 }
