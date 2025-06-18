@@ -10,8 +10,7 @@ const HomePage = async () => {
 
   return (
     <main>
-      <h1 className='logo-main'>Abacus</h1>
-      <p>Expense Tracking Application</p>
+      <h1>Welcome, {user.firstName}</h1>
     </main>
   )
 }
