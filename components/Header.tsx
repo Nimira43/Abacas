@@ -7,7 +7,7 @@ const Header = async () => {
   return ( 
     <nav className='navbar'>
       <div className='navbar-container'>
-        <h2 className='logo'>Abacus</h2>
+        <h2 className='logo-nav'>Abacus</h2>
         <div>
           <SignedOut>
             <SignInButton />
