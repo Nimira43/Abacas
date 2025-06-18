@@ -14,5 +14,9 @@ export const checkUser = async () => {
     }
   })
 
+  if (loggedInUser) {
+    return loggedInUser
+  }
+
 }
  
