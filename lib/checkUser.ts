@@ -26,6 +26,6 @@ export const checkUser = async () => {
       email: user.emailAddresses[0].emailAddress
     }
   })
-
+  return newUser
 }
  
