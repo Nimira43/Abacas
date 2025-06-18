@@ -10,3 +10,6 @@ interface TransactionResult {
   error?: string
 }
 
+async function addTransaction(formData: FormData): Promise<TransactionResult> {
+  
+}
