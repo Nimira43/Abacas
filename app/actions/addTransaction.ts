@@ -5,3 +5,8 @@ interface TransactionData {
   amount: number
 }
 
+interface TransactionResult {
+  data?: TransactionData,
+  error?: string
+}
+
