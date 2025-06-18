@@ -55,14 +55,27 @@ body {
 }
 
 .navbar button,
-.guest button {
+.guest button,
+.submit-btn {
   color: var(--light);
   border-radius: 3px;
-  padding: 0.5rem 1rem;
   font-size: 18px;
   text-transform: uppercase;
+  outline: none;
   cursor: pointer;
   transition: all 0.5s ease;  
+}
+
+.navbar button,
+.guest button {
+  padding: 0.5rem 1rem;
+}
+
+.submit-btn {
+  display: block;
+  /* margin: 10px 0 10px; */
+  padding: 10px;
+  width: 100%;
 }
 
 .navbar button {
@@ -75,12 +88,14 @@ body {
   color: var(--primary);
 }
 
-.guest button {
+.guest button,
+.submit-btn {
   border: none;
   background-color: var(--dark);
 }
 
-.guest button:hover {
+.guest button:hover,
+.submit-btn:hover {
   background-color: var(--primary);
 }
 
@@ -124,7 +139,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.guest {
+.centre {
   text-align: center;
 }
 
@@ -175,6 +190,7 @@ input[type='number'] {
   border-radius: 3px;
   display: block;
   font-size: 16px;
+  margin-bottom: 20px;
   padding: 10px;
   width: 100%;
   transition: all 0.5s ease;
@@ -185,18 +201,6 @@ input[type='number']:focus {
   border: 1px solid var(--dark);
 }
 
-.btn {
-  cursor: pointer;
-  background-color: var(--primary);
-  color: var(--light);
-  border: 0;
-  display: block;
-  font-size: 16px;
-  margin-top: 10px 0 10px;
-  padding: 10px;
-  width: 100%;
-  outline: 0;
-}
 
 .list {
   list-style: none;

@@ -10,7 +10,7 @@ const AddTransaction = () => {
   
   return ( 
     <>
-      <h3>Add Tranaction</h3>
+      <h3 className='uppercase centre'>Add Transaction</h3>
       <form action={clientAction}>
         <div className='formControl'>
           <label htmlFor='text'>Text</label>
@@ -31,6 +31,7 @@ const AddTransaction = () => {
             step='0.01'
           />
         </div>
+        <button className='submit-btn'>Submit</button>
       </form>
     </>
    )
