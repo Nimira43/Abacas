@@ -64,6 +64,18 @@ body {
   color: var(--primary);
 }
 
+.cl-button {
+  transition: all 0.5s ease !important;
+}
+
+.cl-button:focus,
+.cl-button:focus-visible,
+.cl-button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
