@@ -8,11 +8,11 @@ export const checkUser = async () => {
     return null
   }
 
-  return ( 
-    
+  const loggedInUser = await db.user.findUnique({
+    where: {
+      clerkUserId: user.id
+    }
+  })
 
-
-  )
 }
  
-export default 
