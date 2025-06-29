@@ -35,10 +35,13 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
     }
   }
 
-  const transactionData: TransactionData = {
-    text,
-    amount
-  }
+  const transactionData: TransactionData = await db.transaction.create({
+    data: {
+      text,
+      amount,
+      userId
+    }
+  })
 
   return { data: transactionData }
 }
