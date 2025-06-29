@@ -1,6 +1,7 @@
 'use server'
 
 import { auth } from '@clerk/nextjs/server'
+import { db } from '@/lib/db'
 
 interface TransactionData {
   text: string,
