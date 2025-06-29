@@ -8,9 +8,8 @@ const AddTransaction = () => {
     const {data, error} = await addTransaction(formData)
   
     if (error) {
-      alert(error)
+      toast.error(error)
     } else {
-      alert('Transaction Added')
       console.log(data)
     }
   }
