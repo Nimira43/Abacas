@@ -26,8 +26,12 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
   const amount: number = parseFloat(amountValue.toString())
 
   const { userId } = auth()
-  
-  
+
+  if (!userId) {
+    return {
+      error: 'User not found.'
+    }
+  }
 
   const transactionData: TransactionData = {
     text,
