@@ -1,5 +1,5 @@
 'use client'
-
+    
 import addTransaction from '@/app/actions/addTransaction'
 
 const AddTransaction = () => {
