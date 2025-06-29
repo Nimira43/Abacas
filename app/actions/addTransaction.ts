@@ -35,15 +35,20 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
     }
   }
 
-  const transactionData: TransactionData = await db.transaction.create({
-    data: {
-      text,
-      amount,
-      userId
-    }
-  })
+  try {
+    const transactionData: TransactionData = await db.transaction.create({
+      data: {
+        text,
+        amount,
+        userId
+      }
+    })
+    return { data: transactionData }
+  } catch (error) {
+    
+  }
 
-  return { data: transactionData }
+  
 }
 
 export default addTransaction
