@@ -52,8 +52,6 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
       error: 'Transaction not added.'
     }
   }
-
-  
 }
 
 export default addTransaction
