@@ -7,5 +7,5 @@ async function getUserBalance():Promise<{
   balance?: number
   error?: string
 }> {
-  
+  const { userId } = auth()
 }
