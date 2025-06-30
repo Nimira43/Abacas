@@ -43,6 +43,9 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
         userId
       }
     })
+
+    revalidatePath('/')
+
     return { data: transactionData }
   } catch (error) {
     
