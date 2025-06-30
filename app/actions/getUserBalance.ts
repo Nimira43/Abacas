@@ -8,4 +8,10 @@ async function getUserBalance():Promise<{
   error?: string
 }> {
   const { userId } = auth()
+
+  if (!userId) {
+    return {
+      error: 'User not found.'
+    }
+  }
 }
