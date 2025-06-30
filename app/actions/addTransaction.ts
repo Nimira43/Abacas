@@ -48,7 +48,9 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
 
     return { data: transactionData }
   } catch (error) {
-    
+    return {
+      error: 'Transaction not added.'
+    }
   }
 
   
