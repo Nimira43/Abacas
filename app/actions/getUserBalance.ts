@@ -26,5 +26,6 @@ async function getUserBalance():Promise<{
         error: 'Database error.'
       }
     }
+    export default getUserBalance
   }
 }
