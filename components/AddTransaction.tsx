@@ -19,7 +19,10 @@ const AddTransaction = () => {
   return ( 
     <>
       <h3 className='uppercase centre'>Add Transaction</h3>
-      <form action={clientAction}>
+      <form 
+        ref={formRef}
+        action={clientAction}
+      >
         <div className='formControl'>
           <label htmlFor='text'>Text</label>
           <input 
