@@ -15,7 +15,9 @@ async function getUserBalance():Promise<{
     }
 
     try {
-      
+      const transactions = await db.transaction.findMany({
+        where: { userId }
+      })
     } catch (error) {
       
     }
