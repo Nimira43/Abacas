@@ -18,6 +18,9 @@ async function getUserBalance():Promise<{
       const transactions = await db.transaction.findMany({
         where: { userId }
       })
+      const balance = transactions.reduce((sum, transaction) => sum + transaction.amount, 0)
+
+
     } catch (error) {
       
     }
