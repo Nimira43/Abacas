@@ -20,9 +20,11 @@ async function getUserBalance():Promise<{
       })
       const balance = transactions.reduce((sum, transaction) => sum + transaction.amount, 0)
 
-
+      return { balance }
     } catch (error) {
-      
+      return { 
+        error: 'Database error.'
+      }
     }
   }
 }
