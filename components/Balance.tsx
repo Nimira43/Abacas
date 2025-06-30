@@ -1,5 +1,10 @@
 const Balance = () => {
-  return (  );
+  return (  
+    <>
+      <h4>Your Balance</h4>
+      <h1>£400</h1>
+    </>
+  )
 }
  
-export default Balance;
+export default Balance
