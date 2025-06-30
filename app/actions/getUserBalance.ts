@@ -13,5 +13,11 @@ async function getUserBalance():Promise<{
     return {
       error: 'User not found.'
     }
+
+    try {
+      
+    } catch (error) {
+      
+    }
   }
 }
