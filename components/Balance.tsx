@@ -1,3 +1,5 @@
+import getUserBalance from '@/app/actions/getUserBalance'
+
 const Balance = () => {
   return (  
     <>
