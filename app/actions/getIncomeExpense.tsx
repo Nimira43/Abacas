@@ -19,13 +19,11 @@ async function getIncomeExpense(): Promise<{
       where: { userId }
     })
 
-    const balance = transactions.reduce(
-      (sum, transaction) => sum + transaction.amount, 0
-    )
+    
 
-    return { balance }
+    return {}
   } catch (error) {
     return { error: 'Database error.' }
   }
 }    
-export default getUserBalance
+export default getIncomeExpense
