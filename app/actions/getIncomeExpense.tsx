@@ -19,7 +19,7 @@ async function getIncomeExpense(): Promise<{
       where: { userId }
     })
 
-    
+    const amounts = transactions.map((transaction) => transaction.amount)
 
     return {}
   } catch (error) {
