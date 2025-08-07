@@ -7,11 +7,11 @@ const IncomeExpense = async () => {
     <div className='inc-exp-container'>
       <div>
         <h4 className='uppercase'>Income</h4>
-        <p className='money plus'>£342</p>
+        <p className='money plus'>£{ income }</p>
       </div>
       <div>
         <h4 className='uppercase'>Expenses</h4>
-        <p className='money minus'>£122</p>
+        <p className='money minus'>£{ expense }</p>
       </div>  
     </div>
   )
