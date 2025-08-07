@@ -21,6 +21,10 @@ async function getIncomeExpense(): Promise<{
 
     const amounts = transactions.map((transaction) => transaction.amount)
 
+    const income = amounts
+      .filter((item) => item > 0)
+      .reduce((acc, item) => acc + item)
+
     return {}
   } catch (error) {
     return { error: 'Database error.' }
