@@ -1,6 +1,8 @@
 import getIncomeExpense from '@/app/actions/getIncomeExpense'
 
-const IncomeExpense = () => {
+const IncomeExpense = async () => {
+  const { income, expense } = await getIncomeExpense() 
+
   return ( 
     <div className='inc-exp-container'>
       <div>
