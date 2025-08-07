@@ -1,3 +1,5 @@
+import getIncomeExpense from '@/app/actions/getIncomeExpense'
+
 const IncomeExpense = () => {
   return ( 
     <div className='inc-exp-container'>
