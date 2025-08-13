@@ -219,22 +219,34 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .list li {
-  background-color: var(--grey-medium);
+  background-color: var(--grey-light-extra);
   color: var(--dark);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
+  border: 3px solid transparent;
   padding: 10px;
   margin: 10px;
 }
 
+.list li,
+.list span {
+  font-weight: 500;
+}
+
 .list li.plus {
-  border-right: var(--forest);
+  color: var(--forest);   
 }
 
 .list li.minus {
-  border-right: var(--blaze);
+  color: var(--blaze);
 }
+
+.list span {
+  padding-left: 1rem;
+}
+
+
 
 .delete-btn {
   cursor: pointer;

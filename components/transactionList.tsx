@@ -18,7 +18,10 @@ const TransactionList =  async () => {
         {transactions && 
           transactions.map(( 
             transaction: Transaction) => (
-              <p>{ transaction.text}</p>
+              <TransactionItem 
+                key={transaction.id}
+                transaction={transaction}
+              />
             )
           )
         }

@@ -11,9 +11,9 @@ const TransactionItem = ( { transaction}: {
       ? 'minus'
       : 'plus'
     }>
-      {transaction.text}
+      {transaction.text} 
       <span>
-        { addCommas(Math.abs(transaction.amount))}
+        £{addCommas(Math.abs(transaction.amount))}
       </span>
     </li>
    )
