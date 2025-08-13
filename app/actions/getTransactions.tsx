@@ -2,9 +2,10 @@
 
 import { db } from '@/lib/db'
 import { auth } from '@clerk/nextjs/server'
+import { Transaction } from '@prisma/client'
 
-async function getUserBalance(): Promise<{
-  balance?: number
+async function getTransactions(): Promise<{
+  transactions?: Transaction[]
   error?: string
 }> {
   const { userId } = auth()
@@ -15,16 +16,15 @@ async function getUserBalance(): Promise<{
   
   try {
     const transactions = await db.transaction.findMany({
-      where: { userId }
+      where: { userId },
+      orderBy: {
+        createdAt: 'desc'
+      }
     })
 
-    const balance = transactions.reduce(
-      (sum, transaction) => sum + transaction.amount, 0
-    )
-
-    return { balance }
+    return { transactions }
   } catch (error) {
     return { error: 'Database error.' }
   }
 }    
-export default getUserBalance
+export default getTransactions
