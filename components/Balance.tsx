@@ -6,7 +6,7 @@ const Balance = async () => {
   
   return (  
     <>
-      <h3 className='uppercase centre mb primary'>Your Balance</h3>
+      <h3 className='uppercase centre  primary'>Your Balance</h3>
       <h1 className='centre mb'>£{addCommas(balance ?? 0)}</h1>
     </>
   )

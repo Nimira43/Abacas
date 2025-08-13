@@ -12,7 +12,7 @@ const TransactionList =  async () => {
 
   return ( 
     <>
-      <h3>Previous Transactions</h3>
+      <h3 className='primary uppercase centre'>Previous Transactions</h3>
       <ul className='list'>
         {transactions && 
           transactions.map(( 
