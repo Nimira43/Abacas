@@ -1,3 +1,5 @@
+import { Transaction } from '@/types/Transaction'
+
 const TransactionList = () => {
   return ( 
     <>
