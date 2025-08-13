@@ -1,3 +1,4 @@
+import getTransactions from '@/app/actions/getTransactions'
 import { Transaction } from '@/types/Transaction'
 
 const TransactionList = () => {
