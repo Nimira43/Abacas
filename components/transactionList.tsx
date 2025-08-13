@@ -1,7 +1,15 @@
 import getTransactions from '@/app/actions/getTransactions'
 import { Transaction } from '@/types/Transaction'
 
-const TransactionList = () => {
+const TransactionList =  async () => {
+  const { transactions, error} = await getTransactions()
+
+  if (error) {
+    return (
+      <p className='error'>{ error }</p>
+    )
+  }
+
   return ( 
     <>
       <h3>Previous Transactions</h3>
