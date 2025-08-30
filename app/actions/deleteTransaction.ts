@@ -15,13 +15,12 @@ async function deleteTransaction(transactionsId: string): Promise<{
   }
   
   try {
-    const transactions = await db.transaction.findMany({
-      where: { userId }
+    await db.transaction.delete({
+      where: {
+        id: transactionsId,
+        userId
+      }
     })
-
-    const balance = transactions.reduce(
-      (sum, transaction) => sum + transaction.amount, 0
-    )
 
     return { balance }
   } catch (error) {
