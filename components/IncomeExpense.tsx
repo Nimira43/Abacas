@@ -1,4 +1,5 @@
 import getIncomeExpense from '@/app/actions/getIncomeExpense'
+import { addCommas } from '@/lib/utils'
 
 const IncomeExpense = async () => {
   const { income, expense } = await getIncomeExpense() 
