@@ -17,6 +17,12 @@ const TransactionItem = ( { transaction}: {
       <span>
         {sign}£{addCommas(Math.abs(transaction.amount))}
       </span>
+      <button 
+        onClick={ () => handleDeleteTransaction(transaction.id) }
+        className='delete-btn'
+      >
+      X
+      </button>
     </li>
    )
 }
