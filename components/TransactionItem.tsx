@@ -1,8 +1,9 @@
 import { Transaction } from '@/types/Transaction'
 import { addCommas } from '@/lib/utils'
 import { toast } from 'react-toastify'
+import deleteTransaction from '@/app/actions/deleteTransaction'
 
-const TransactionItem = ( { transaction}: {
+const TransactionItem = ({ transaction }: {
   transaction: Transaction
 }) => {
   const sign = transaction.amount < 0 ? '-' : '+'
