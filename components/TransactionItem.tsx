@@ -11,7 +11,7 @@ const TransactionItem = ( { transaction}: {
   
     if (!confirmed) return
 
-    await handleDeleteTransaction(transactionId) 
+    await deleteTransaction(transactionId) 
   
     toast.success('Transaction deleted.')
   }
