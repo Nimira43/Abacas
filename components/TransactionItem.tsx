@@ -10,6 +10,10 @@ const TransactionItem = ( { transaction}: {
     const confirmed = window.confirm('Are you sure you want to delete this transaction?')
   
     if (!confirmed) return
+
+    await handleDeleteTransaction(transactionId) 
+  
+    toast.success('Transaction deleted.')
   }
   
   return ( 
